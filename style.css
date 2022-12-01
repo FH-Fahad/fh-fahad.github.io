@@ -35,11 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .publications, .skills, .Projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.publications .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -47,6 +47,7 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+
 section .title{
     position: relative;
     text-align: center;
@@ -263,22 +264,22 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.services, .teams{
+/* publications section styling */
+.publications, .Projects{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.publications .title::before,
+.Projects .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.publications .title::after,
+.Projects .title::after{
     background: #111;
-    content: "how can i help";
+    content: "";
 }
-.services .serv-content .card{
-    width: calc(33% - 20px);
+.publications .serv-content .card{
+    /* width: calc(33% - 20px); */
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -286,24 +287,24 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.publications .serv-content .card:hover{
     background: crimson;
 }
-.services .serv-content .card .box{
+.publications .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.publications .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.publications .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.publications .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.publications .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -315,7 +316,7 @@ section .title::after{
     color: #fff;
 }
 .skills .title::after{
-    content: "what i achived";
+    content: "";
     background: #111;
 }
 .skills .skills-content .column{
@@ -372,7 +373,7 @@ section .title::after{
     top: 0;
     background: crimson;
 }
-.skills-content .right .html::before{
+/* .skills-content .right .html::before{
     width: 80%;
 }
 .skills-content .right .css::before{
@@ -386,13 +387,17 @@ section .title::after{
 }
 .skills-content .right .mysql::before{
     width: 98%;
+} */
+
+/* Projects section styling */
+.Projects .title::after{
+    /* content: "who with me"; */
 }
 
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
+.Hide{
+    display: none;
 }
-.teams .carousel .card{
+.Projects .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -400,25 +405,26 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.Projects .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+
+.Projects .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.Projects .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.Projects .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.Projects .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -426,7 +432,21 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+
+.center{
+    display: flex;
+  margin: auto;
+  width: 50%;
+  border: 3px;
+  padding: 10px;
+}
+
+.text-color{
+    text-align: center;
+    color: white;
+}
+
+.Projects .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -558,6 +578,7 @@ footer{
     padding: 15px 23px;
     color: #fff;
     text-align: center;
+    height: 50px;
 }
 footer span a{
     color: crimson;
@@ -639,8 +660,8 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
+    .publications .serv-content .card{
+        /* width: calc(50% - 10px); */
         margin-bottom: 20px;
     }
     .skills .skills-content .column,
@@ -648,11 +669,27 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    /* .text-color{
+    display: inline;
+    text-align: center;
+    color: white;
+    }
+    .center{
+        display: inline;
+    } */
 }
 
 @media (max-width: 760px){
     .about .about-content .right a{
         font-size: 14px;
+    }
+    .text-color{
+    display: inline;
+    text-align: center;
+    color: white;
+    }
+    .center{
+        width: 80%;
     }
 }
 
@@ -669,7 +706,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 15px;
     }
-    .services .serv-content .card{
+    .publications .serv-content .card{
         width: 100%;
     }
 }
@@ -731,4 +768,5 @@ footer span a:hover{
     .home .home-content a{
         font-size: 10px;
     }
+}
 }
