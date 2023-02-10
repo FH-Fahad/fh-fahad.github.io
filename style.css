@@ -219,8 +219,8 @@ section .title::after{
 .about{
     background: #111;
     color:#fff;
-    height: 100vh;
-    display: flex;
+    /* height: 100vh;
+    display: flex; */
 }
 .about .title::after{
     content: "who i am";
@@ -665,8 +665,6 @@ footer span a:hover{
     .about .about-content .left img{
         height: 400px;
         width: 300px;
-        object-fit: cover;
-        border-radius: 6px;
     }
     .about .about-content .left{
         display: flex;
