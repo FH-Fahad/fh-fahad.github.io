@@ -219,22 +219,24 @@ section .title::after{
 .about{
     background: #111;
     color:#fff;
+    height: 100vh;
+    display: flex;
 }
 .about .title::after{
     content: "who i am";
     background: #111;
 }
 .about .about-content .left{
-    width: 45%;
+    width: 40%;
 }
 .about .about-content .left img{
     height: 400px;
-    width: 400px;
+    width: 300px;
     object-fit: cover;
     border-radius: 6px;
 }
 .about .about-content .right{
-    width: 55%;
+    width: 60%;
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -268,6 +270,7 @@ section .title::after{
 .publications, .Projects{
     color:#fff;
     background: #111;
+    
 }
 .publications .title::before,
 .Projects .title::before{
@@ -319,9 +322,15 @@ section .title::after{
     content: "";
     background: #111;
 }
-.skills .skills-content .column{
-    width: calc(50% - 30px);
+.skills .skills-content .left{
+    width: calc(40% - 30px);
 }
+.skills .skills-content .right{
+    width: calc(60% - 30px);
+}
+/* .skills .skills-content .column{
+    width: calc(50% - 30px);
+} */
 .skills .skills-content .left .text{
     font-size: 30px;
     font-weight: 600;
@@ -593,8 +602,8 @@ footer span a:hover{
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 240px;
     }
 }
 
@@ -652,6 +661,12 @@ footer span a:hover{
     }
     .about .about-content .column{
         width: 100%;
+    }
+    .about .about-content .left img{
+        height: 400px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 6px;
     }
     .about .about-content .left{
         display: flex;
