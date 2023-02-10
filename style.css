@@ -400,9 +400,9 @@ section .title::after{
 } */
 
 /* Projects section styling */
-.Projects .title::after{
-    /* content: "who with me"; */
-}
+/* .Projects .title::after{
+    content: "who with me";
+} */
 
 .Hide{
     display: none;
