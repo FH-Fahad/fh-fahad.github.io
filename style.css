@@ -173,6 +173,7 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.5s ease;
 }
 .home .max-width{
   width: 100%;
@@ -214,6 +215,19 @@ section .title::after{
     color: crimson;
     background: none;
 }
+.media-icons a{
+  font-size: 16px;
+  margin:0 0px;
+  margin-top: 30px;
+}
+
+.home .button button{
+  font-size: 25px;
+  font-weight: 400;
+  background:#111;
+  cursor:pointer;
+  border:2px solid transparent;
+}
 
 /* about section styling */
 .about{
@@ -222,10 +236,7 @@ section .title::after{
     /* height: 100vh;
     display: flex; */
 }
-.about .title::after{
-    content: "who i am";
-    background: #111;
-}
+
 .about .about-content .left{
     width: 40%;
 }
