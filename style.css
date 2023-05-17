@@ -214,7 +214,7 @@ section .title::after{
 }
 .media-icons a{
   font-size: 16px;
-  margin:0 0px;
+  margin:0px 4px;
   margin-top: 30px;
 }
 .home .button button{
@@ -606,6 +606,22 @@ footer span a:hover{
     .home .home-content a{
         font-size: 14px;
     }
+    .skills .skills-content .right span{
+    font-weight: 400;
+    font-size: 16px;
+    }
+    .media-icons a{
+    font-size: 15px;
+    margin:0 2px;
+    margin-top: 25px;
+    }
+    .home .button button{
+    font-size: 25px;
+    font-weight: 400;
+    background:#111;
+    cursor:pointer;
+    border:2px solid transparent;
+    }
 }
 
 @media (max-width: 500px) {
@@ -617,6 +633,18 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 12px;
+    }
+    .media-icons a{
+    font-size: 14px;
+    margin:0 1px;
+    margin-top: 22px;
+    }
+    .home .button button{
+    font-size: 22px;
+    font-weight: 400;
+    background:#111;
+    cursor:pointer;
+    border:2px solid transparent;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -640,6 +668,10 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .skills .skills-content .right span{
+    font-weight: 400;
+    font-size: 14px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -651,5 +683,21 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 10px;
+    }
+    .media-icons a{
+    font-size: 14px;
+    margin:0 0px;
+    margin-top: 20px;
+    }
+    .home .button button{
+    font-size: 20px;
+    font-weight: 400;
+    background:#111;
+    cursor:pointer;
+    border:2px solid transparent;
+    }
+    .skills .skills-content .right span{
+    font-weight: 400;
+    font-size: 12px;
     }
 }
