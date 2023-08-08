@@ -1,14 +1,14 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         // sticky navbar on scroll script
-        if (this.scrollY > 20) {
+        if (this.scrollY > 100) {
             $('.navbar').addClass("sticky");
         } else {
             $('.navbar').removeClass("sticky");
         }
 
         // scroll-up button show/hide script
-        if (this.scrollY > 500) {
+        if (this.scrollY > 600) {
             $('.scroll-up-btn').addClass("show");
         } else {
             $('.scroll-up-btn').removeClass("show");
@@ -33,15 +33,7 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["A MERN Stack Developer", "A Compititive Programmer", "An Android App Developer", "A Web Designer and Developer"],
-        typeSpeed: 150,
-        backSpeed: 80,
-        loop: true
-    });
-
-    var typed = new Typed(".typing-2", {
         strings: ["A MERN Stack Developer", "A Compititive Programmer", "An Android App Developer", "A Web Designer and Developer"],
         typeSpeed: 150,
         backSpeed: 80,

@@ -388,7 +388,7 @@ section .title::after {
   margin: 10px;
 }
 .projects .boxes {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   align-items: center;
   display: flex;
@@ -398,7 +398,7 @@ section .title::after {
 .projects .boxes .box {
   background: #222;
   margin: 20px 0;
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 15px);
   text-align: justify;
   border-radius: 12px;
   padding: 30px 10px;
@@ -475,7 +475,7 @@ footer span a:hover {
     width: 240px;
   }
   .projects .boxes{
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -582,7 +582,7 @@ footer span a:hover {
     width: 80%;
   }
   .projects .boxes {
-    width: 80%;
+    width: 90%;
   }
 }
 
