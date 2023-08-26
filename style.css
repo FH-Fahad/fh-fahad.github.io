@@ -416,7 +416,8 @@ section .title::after {
 }
 
 .projects .boxes {
-  width: 70%;
+  max-width: 768px;
+  min-width: none;
   margin: 0 auto;
   align-items: center;
   display: flex;
@@ -512,6 +513,19 @@ footer span a:hover {
     font-weight: 400;
     font-size: 16px;
   }
+
+  .projects .boxes {
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .projects .boxes .box {
+    width: calc(100% / 1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -605,10 +619,6 @@ footer span a:hover {
 @media (max-width: 660px) {
   .home .home-content .text-2 {
     font-size: 50px;
-  }
-
-  .projects .boxes .box {
-    width: calc(100% / 1 - 15px);
   }
 }
 
