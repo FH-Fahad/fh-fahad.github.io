@@ -35,7 +35,7 @@ section {
 }
 
 .max-width {
-  max-width: 1300px;
+  max-width: 1024px;
   padding: 0 80px;
   margin: auto;
 }
@@ -95,14 +95,14 @@ section .title::after {
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 2;
   padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
 
 .navbar.sticky {
-  padding: 15px 0;
+  padding: 10px 0;
   background: crimson;
 }
 
@@ -152,7 +152,7 @@ section .title::after {
 /* menu btn styling */
 .menu-btn {
   color: #fff;
-  font-size: 23px;
+  font-size: 20px;
   cursor: pointer;
   display: none;
 }
@@ -210,30 +210,31 @@ section .title::after {
 }
 
 .home .home-content .text-1 {
-  font-size: 27px;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .home .home-content .text-2 {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: 600;
   margin-left: -3px;
 }
 
 .home .home-content .text-3 {
-  font-size: 40px;
+  font-size: 24px;
   margin: 5px 0;
 }
 
 .home .home-content .text-3 span {
   color: crimson;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .home .home-content a {
   display: inline-block;
   background: crimson;
   color: #fff;
-  font-size: 25px;
+  font-size: 22px;
   padding: 12px 20px;
   margin-top: 20px;
   font-weight: 400;
@@ -248,13 +249,13 @@ section .title::after {
 }
 
 .media-icons a {
-  font-size: 16px;
+  font-size: 12px;
   margin: 0px 4px;
   margin-top: 30px;
 }
 
 .home .button button {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 400;
   background: #111;
   cursor: pointer;
@@ -265,8 +266,6 @@ section .title::after {
 .about {
   background: #111;
   color: #fff;
-  /* height: 100vh;
-    display: flex; */
 }
 
 .about .about-content .left {
@@ -274,8 +273,8 @@ section .title::after {
 }
 
 .about .about-content .left img {
-  height: 400px;
-  width: 300px;
+  height: 350px;
+  width: 250px;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -284,25 +283,16 @@ section .title::after {
   width: 60%;
 }
 
-.about .about-content .right .text {
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.about .about-content .right .text span {
-  color: crimson;
-}
-
 .about .about-content .right p {
   text-align: justify;
+  font-size: 16px;
 }
 
 .about .about-content .right a {
   display: inline-block;
   background: crimson;
   color: #fff;
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 400;
   padding: 10px 30px;
   margin-top: 20px;
@@ -328,31 +318,20 @@ section .title::after {
 }
 
 .skills .skills-content .right {
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
-}
-
-.skills .skills-content .right .bars {
-  margin-bottom: 15px;
 }
 
 .skills .skills-content .right .info {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   align-items: center;
   justify-content: space-between;
 }
 
 .skills .skills-content .right span {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
-}
-
-.skills .skills-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: lightgrey;
-  position: relative;
 }
 
 .skills .skills-content .right .line::before {
@@ -362,10 +341,6 @@ section .title::after {
   left: 0;
   top: 0;
   background: crimson;
-}
-
-.Hide {
-  display: none;
 }
 
 /* publications section styling */
@@ -396,15 +371,9 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
+
 .publications .serv-content .card:hover {
   background: crimson;
-}
-
-.publications .serv-content .card .box {
-  transition: all 0.3s ease;
-}
-
-.publications .serv-content .card:hover .box {
   transform: scale(1.05);
 }
 
@@ -430,6 +399,7 @@ section .title::after {
   width: 50%;
   border: 3px;
   padding: 10px;
+  width: 350px;
 }
 
 .text-color {
@@ -457,7 +427,7 @@ section .title::after {
 .projects .boxes .box {
   background: #222;
   margin: 20px 0;
-  width: calc(100% / 3 - 15px);
+  width: calc(100% / 2 - 15px);
   text-align: justify;
   cursor: default;
   border-radius: 6px;
@@ -466,8 +436,8 @@ section .title::after {
 }
 
 .projects .boxes .box .icon {
-  height: 50px;
-  width: 50px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -483,7 +453,7 @@ section .title::after {
 
 .projects .topic p {
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   padding: 20px;
   padding-bottom: 0px;
 }
@@ -495,7 +465,7 @@ section .title::after {
 }
 
 .topic a {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   cursor: pointer;
 }
@@ -519,18 +489,32 @@ footer span a:hover {
 }
 
 /* responsive media query start */
-@media (max-width: 991px) {
-  .max-width {
-    padding: 0 50px;
+@media(max-width: 855px) {
+  .about .about-content .left img {
+    height: 320px;
+    width: 220px;
   }
 
-  .projects .boxes .box {
-    margin: 20px 0;
-    width: calc(100% / 2 - 20px);
+  .about .about-content .right p {
+    font-size: 15px;
+  }
+
+  .about .about-content .right a {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  .skills .skills-content .right {
+    width: 80%;
+  }
+
+  .skills .skills-content .right span {
+    font-weight: 400;
+    font-size: 16px;
   }
 }
 
-@media (max-width: 855px) {
+@media (max-width: 768px) {
   .menu-btn {
     display: block;
     z-index: 2;
@@ -566,26 +550,26 @@ footer span a:hover {
     font-size: 25px;
   }
 
+  .home .home-content .text-1 {
+    font-size: 20px;
+  }
+
   .home .home-content .text-2 {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .home .home-content .text-3 {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   .home .home-content a {
     font-size: 16px;
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
 
   .about .about-content .right a {
     font-size: 16px;
     padding: 10px 30px;
-  }
-
-  .max-width {
-    max-width: 930px;
   }
 
   .about .about-content .column {
@@ -608,7 +592,6 @@ footer span a:hover {
   }
 
   .publications .serv-content .card {
-    /* width: calc(50% - 10px); */
     margin-bottom: 20px;
   }
 
@@ -619,175 +602,122 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 760px) {
-  .about .about-content .right a {
-    font-size: 14px;
-  }
-
-  .text-color {
-    display: inline;
-    text-align: center;
-    color: white;
-  }
-
-  .center {
-    width: 80%;
-  }
-
-  .projects .boxes {
-    width: 90%;
-  }
-}
-
-@media (max-width: 690px) {
-  .max-width {
-    padding: 0 23px;
-  }
-
-  .home .home-content .text-2 {
-    font-size: 60px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 30px;
-  }
-
-  .home .home-content a {
-    font-size: 15px;
-  }
-
-  .publications .serv-content .card {
-    width: 100%;
-  }
-
-  .projects .boxes .box {
-    margin: 20px 0;
-    width: 100%;
-  }
-}
-
-@media (max-width: 580px) {
-  .home .home-content .text-2 {
-    font-size: 55px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 27px;
-  }
-
-  .home .home-content a {
-    font-size: 14px;
-  }
-
-  .skills .skills-content .right span {
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  .media-icons a {
-    font-size: 15px;
-    margin: 0 2px;
-    margin-top: 25px;
-  }
-
-  .home .button button {
-    font-size: 25px;
-    font-weight: 400;
-    background: #111;
-    cursor: pointer;
-    border: 2px solid transparent;
-  }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   .home .home-content .text-2 {
     font-size: 50px;
   }
 
-  .home .home-content .text-3 {
-    font-size: 25px;
-  }
-
-  .home .home-content a {
-    font-size: 12px;
-  }
-
-  .media-icons a {
-    font-size: 14px;
-    margin: 0 1px;
-    margin-top: 22px;
-  }
-
-  .home .button button {
-    font-size: 22px;
-    font-weight: 400;
-    background: #111;
-    cursor: pointer;
-    border: 2px solid transparent;
-  }
-
-  .about .about-content .right .text,
-  .skills .skills-content .left .text {
-    font-size: 19px;
-  }
-
-  .contact .right form .fields {
-    flex-direction: column;
-  }
-
-  .contact .right form .name,
-  .contact .right form .email {
-    margin: 0;
-  }
-
-  .right form .error-box {
-    width: 150px;
-  }
-
-  .scroll-up-btn {
-    right: 15px;
-    bottom: 15px;
-    height: 38px;
-    width: 35px;
-    font-size: 23px;
-    line-height: 38px;
-  }
-
-  .skills .skills-content .right span {
-    font-weight: 400;
-    font-size: 14px;
+  .projects .boxes .box {
+    width: calc(100% / 1 - 15px);
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
+
+  .home .home-content .text-1 {
+    font-size: 18px;
+  }
+
   .home .home-content .text-2 {
     font-size: 40px;
   }
 
   .home .home-content .text-3 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .home .home-content a {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .skills .skills-content .column {
+    width: 100%;
+  }
+
+  .skills .skills-content .right span {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  .max-width {
+    padding: 0 60px;
+  }
+
+  .skills .skills-content .column {
+    width: 100%;
+  }
+
+  .skills .skills-content .right span {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .center {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .max-width {
+    padding: 0 40px;
+  }
+
+  .home .home-content .text-1 {
+    font-size: 16px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 32px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 16px;
   }
 
   .home .home-content a {
     font-size: 10px;
   }
 
-  .media-icons a {
-    font-size: 14px;
-    margin: 0 0px;
-    margin-top: 20px;
+  .about .about-content .left img {
+    height: 350px;
+    width: 250px;
   }
 
-  .home .button button {
-    font-size: 20px;
-    font-weight: 400;
-    background: #111;
-    cursor: pointer;
-    border: 2px solid transparent;
+  .about .about-content .right p {
+    font-size: 14px;
   }
 
   .skills .skills-content .right span {
     font-weight: 400;
     font-size: 13px;
+  }
+
+  .center {
+    width: 270px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media(max-width:426px) {
+  .max-width {
+    padding: 0 20px;
+  }
+
+  .home .home-content .media-icons a {
+    padding: 8px 12px;
+  }
+
+  .center {
+    width: 250px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
   }
 }
