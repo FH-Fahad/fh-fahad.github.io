@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         // sticky navbar on scroll script
-        { this.scrollY > 60 ? $('.navbar').addClass("sticky") : $('.navbar').removeClass("sticky") }
+        { this.scrollY > 20 ? $('.navbar').addClass("sticky") : $('.navbar').removeClass("sticky") }
 
         // scroll-up button show/hide script
         { this.scrollY > 400 ? $('.scroll-up-btn').addClass("show") : $('.scroll-up-btn').removeClass("show") }

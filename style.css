@@ -617,23 +617,30 @@ footer span a:hover {
 }
 
 @media (max-width: 660px) {
+  .max-width {
+    padding: 0 60px;
+  }
+
   .home .home-content .text-2 {
     font-size: 50px;
   }
 }
 
 @media (max-width: 600px) {
+  .max-width {
+    padding: 0 40px;
+  }
 
   .home .home-content .text-1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .home .home-content .text-2 {
-    font-size: 40px;
+    font-size: 48px;
   }
 
   .home .home-content .text-3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .home .home-content a {
@@ -647,22 +654,18 @@ footer span a:hover {
 
   .skills .skills-content .right span {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 540px) {
-  .max-width {
-    padding: 0 60px;
-  }
-
   .skills .skills-content .column {
     width: 100%;
   }
 
   .skills .skills-content .right span {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .center {
@@ -672,23 +675,23 @@ footer span a:hover {
 
 @media (max-width: 500px) {
   .max-width {
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
   .home .home-content .text-1 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .home .home-content .text-2 {
-    font-size: 32px;
+    font-size: 42px;
   }
 
   .home .home-content .text-3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .home .home-content a {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .about .about-content .left img {
@@ -702,7 +705,7 @@ footer span a:hover {
 
   .skills .skills-content .right span {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .center {
@@ -714,20 +717,25 @@ footer span a:hover {
   }
 }
 
-@media(max-width:426px) {
+@media(max-width:424px) {
   .max-width {
-    padding: 0 20px;
+    padding: 0 10px;
+  }
+
+  .home .home-content .text-1 {
+    font-size: 22px;
   }
 
   .home .home-content .media-icons a {
-    padding: 8px 12px;
+    padding: 8px 14px;
+  }
+
+  .home .button button {
+    width: fit-content;
+    font-size: 24px;
   }
 
   .center {
     width: 250px;
-  }
-
-  ::-webkit-scrollbar {
-    width: 5px;
   }
 }
