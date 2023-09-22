@@ -4,7 +4,7 @@ $(document).ready(function () {
         { this.scrollY > 20 ? $('.navbar').addClass("sticky") : $('.navbar').removeClass("sticky") }
 
         // scroll-up button show/hide script
-        { this.scrollY > 400 ? $('.scroll-up-btn').addClass("show") : $('.scroll-up-btn').removeClass("show") }
+        { this.scrollY > 200 ? $('.scroll-up-btn').addClass("show") : $('.scroll-up-btn').removeClass("show") }
     });
 
     $('.scroll-up-btn').click(function () {

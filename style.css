@@ -137,7 +137,7 @@ section .title::after {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left: 20px;
   transition: color 0.3s ease;
 }
 
@@ -576,11 +576,6 @@ footer span a:hover {
     font-size: 20px;
   }
 
-  .home .home-content a {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-
   .about .about-content .right a {
     font-size: 16px;
     padding: 10px 30px;
@@ -690,10 +685,6 @@ footer span a:hover {
     font-size: 18px;
   }
 
-  .home .home-content a {
-    font-size: 12px;
-  }
-
   .about .about-content .left img {
     height: 350px;
     width: 250px;
@@ -719,20 +710,11 @@ footer span a:hover {
 
 @media(max-width:424px) {
   .max-width {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .home .home-content .text-1 {
     font-size: 22px;
-  }
-
-  .home .home-content .media-icons a {
-    padding: 8px 14px;
-  }
-
-  .home .button button {
-    width: fit-content;
-    font-size: 24px;
   }
 
   .center {
