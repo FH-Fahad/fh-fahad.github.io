@@ -1,29 +1,29 @@
 # Fahad Bin Mohammad Hossain
 
-Phone: +8801876430660
-Email: fahadbin8900@gmail.com
-Location: Mirpur 2, Dhaka
+Phone: +8801876430660 <br>
+Email: fahadbin8900@gmail.com <br>
+Location: Mirpur 2, Dhaka <br>
 [Portfolio](https://fh-fahad.github.io/) &nbsp; &nbsp; &nbsp;
 [GitHub](https://github.com/fh-fahad)
 
-**SUMMARY**
+**SUMMARY** <br>
 I am a recent graduate from Bangladesh University of Business and Technology (BUBT) with a strong passion for software engineering and web development. With a proven track record of solving over 500 problems on various online judges, I am dedicated to the creative process of designing and building sustainable software applications.
 
-**EDUCATION**
+**EDUCATION** <br>
 
 - **B.Sc. in Computer Science and Engineering**
   Bangladesh University of Business and Technology - BUBT
   Graduated: 2019-2023
   CGPA: 3.63 out of 4
 
-**SKILLS**
+**SKILLS** <br>
 
 - **Programming Languages:** C++, C#, Java, JavaScript, and Python, with a deep understanding of Object-Oriented Programming (OOP) concepts for creating clean and maintainable code architectures.
 - **Database Management:** Proficient in handling both relational databases like MySQL and NoSQL databases like MongoDB, ensuring data integrity and efficiency through effective data modeling and abstraction.
 - **Software Development:** Skilled in HTML, CSS, React, Redux, Next.js, Node.js, and have a basic understanding of DotNet.
 - **Tools and Technology:** Proficient in Linux, Git & GitHub, and Visual Studio Code for streamlined development processes.
 
-**PROJECTS**
+**PROJECTS** <br>
 
 1. **Portfolio Website with JavaScript**
 
@@ -53,7 +53,7 @@ I am a recent graduate from Bangladesh University of Business and Technology (BU
 
    - Designed a multi-player chess game using HTML, CSS, JavaScript, and Node.js.
 
-**ACTIVITIES**
+**ACTIVITIES** <br>
 
 - **BUBT Inter-university Programming Contest (2nd Place)**
 
@@ -62,12 +62,12 @@ I am a recent graduate from Bangladesh University of Business and Technology (BU
 - **Workshop on Competitive Programming**
   - Conducted at BUBT campus.
 
-**AREA OF INTERESTS**
+**AREA OF INTERESTS** <br>
 
 - Software Engineering
 - Full Stack Development
 
-**LANGUAGES**
+**LANGUAGES** <br>
 
 - Bangla (Native)
 - English
