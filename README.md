@@ -27,7 +27,7 @@ I am a recent graduate from Bangladesh University of Business and Technology (BU
 
 1. **Portfolio Website with JavaScript**
 
-   - Developed a portfolio website using JavaScript, HTML, and CSS. [Link](https://github.com/FH-Fahad/fh-fahad.github.io)
+   - Developed a portfolio website using JavaScript, HTML, and CSS. [Link](https://fh-fahad.github.io/)
 
 2. **Brain Tumor Detection**
 
@@ -47,7 +47,7 @@ I am a recent graduate from Bangladesh University of Business and Technology (BU
 
 6. **A Clothing Site**
 
-   - Created a basic shopping site using React, JavaScript, and Google Firebase. [Link](https://fh-clothing-v1.vercel.app/)
+   - Created a basic shopping site using React, JavaScript, and Google Firebase. [Link](https://github.com/FH-Fahad/fh-clothingV1)
 
 7. **Checkmate - Multi-player Chess Game**
 
