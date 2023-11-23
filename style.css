@@ -435,20 +435,13 @@ section .title::after {
   transition: all 0.4s ease;
 }
 
-.projects .boxes .box .icon {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 18px;
-  color: var(--white-color);
-  margin: 0 auto 10px auto;
-  transition: all 0.4s ease;
+.end {
+  padding-left: 20px;
 }
 
 .projects .topic a {
   color: #fff;
+  font-size: 20px;
 }
 
 .projects .topic p {
