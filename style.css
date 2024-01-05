@@ -230,6 +230,12 @@ section .title::after {
   font-weight: 400;
 }
 
+.home .home-content .education {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
 .home .home-content a {
   display: inline-block;
   background: crimson;
@@ -361,7 +367,7 @@ section .title::after {
 }
 
 .publications .serv-content .card {
-  /* width: calc(33% - 20px); */
+  width: 350px;
   background: #222;
   text-align: center;
   border-radius: 6px;
@@ -425,6 +431,10 @@ section .title::after {
 }
 
 .projects .boxes .box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
   background: #222;
   margin: 20px 0;
   width: calc(100% / 2 - 10px);
@@ -507,7 +517,7 @@ footer span a:hover {
   }
 
   .projects .boxes {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     align-items: center;
     display: flex;
@@ -604,6 +614,11 @@ footer span a:hover {
 }
 
 @media (max-width: 660px) {
+  .home {
+    padding-top: 200px;
+    height: auto;
+  }
+
   .max-width {
     padding: 0 60px;
   }
@@ -628,6 +643,10 @@ footer span a:hover {
 
   .home .home-content .text-3 {
     font-size: 20px;
+  }
+
+  .home .home-content .education {
+    font-size: 14px;
   }
 
   .home .home-content a {
@@ -677,6 +696,10 @@ footer span a:hover {
     font-size: 18px;
   }
 
+  .home .home-content .education {
+    font-size: 12px;
+  }
+
   .about .about-content .left img {
     height: 350px;
     width: 250px;
@@ -709,7 +732,13 @@ footer span a:hover {
     font-size: 22px;
   }
 
+  .skills .skills-content .right .info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+
   .center {
-    width: 250px;
+    width: 100%;
   }
 }
