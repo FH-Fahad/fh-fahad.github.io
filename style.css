@@ -489,6 +489,13 @@ section .title::after {
   cursor: pointer;
 }
 
+.wide{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* footer section styling */
 footer {
   background: #111;
@@ -542,7 +549,9 @@ footer span a:hover {
   }
 
   .projects .boxes .box {
-    width: calc(100% / 1);
+    margin: 10px auto;
+    /* width: calc(100% / 2 - 10px); */
+    width: calc(60% / 1);
   }
 }
 
@@ -642,6 +651,10 @@ footer span a:hover {
   .home .home-content .text-2 {
     font-size: 50px;
   }
+
+  .projects .boxes .box {
+    width: calc(70% / 1 - 10px);
+  }
 }
 
 @media (max-width: 600px) {
@@ -688,6 +701,10 @@ footer span a:hover {
   .skills .skills-content .right span {
     font-weight: 400;
     font-size: 15px;
+  }
+
+  .projects .boxes .box {
+    width: calc(100% / 1 - 10px);
   }
 
   .center {
@@ -752,6 +769,19 @@ footer span a:hover {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 10px;
+  }
+
+  .projects .boxes .box {
+    margin: 10px 0;
+    height: auto;
+  }
+
+  .projects .topic a {
+    font-size: 18px;
+  }
+
+  .projects .topic p {
+    font-size: 16px;
   }
 
   .center {
