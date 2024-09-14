@@ -7,7 +7,11 @@ Email: fahadbin8900@gmail.com <br>
 [LeetCode](https://leetcode.com/Fahad006/)
 
 **SUMMARY** <br>
-Recent graduate with a strong educational background in computer science and an unwavering passion for the ever-evolving software engineering and web developing field. I've successfully solved more than 600 problems on different online judges.
+Junior Software Engineer | Passionate about Software Development & Competitive Programming.
+
+I recently graduated with a degree in Computer Science and Engineering from the Bangladesh University of Business and Technology (BUBT). I am now building my career as a Junior Software Engineer, focusing on Node.js technology. In this role, I develop complex, scalable applications while continuing to enhance my skills in full-stack development.
+
+With a deep passion for both software development and competitive programming, I am constantly learning and staying up-to-date with the latest technologies. My goal is to contribute to innovative projects and grow as a versatile engineer capable of tackling both front-end and back-end challenges.
 
 **EDUCATION** <br>
 
