@@ -24,9 +24,9 @@ With a deep passion for both software development and competitive programming, I
 **SKILLS** <br>
 
 - **Programming Languages:** C++, Java, JavaScript, TypeScript and Python with a deep understanding of Object-Oriented Programming (OOP) concepts for creating clean and maintainable code architectures.
-- **Database Management:** Proficient in handling both relational databases like MySQL and NoSQL databases like MongoDB, ensuring data integrity and efficiency through effective data modeling and abstraction.
-- **Software Development:** Skilled in HTML, CSS, React.js, Redux, Node.js, Express.js and have a basic understanding of DotNet.
-- **Tools and Technology:** Handlebars.js, TailwindCSS, Git & GitHub.
+- **Database Management:** Proficient in handling relational databases like Postgres, NoSQL databases like MongoDB, caching with Redis ensuring data integrity and efficiency through effective data modeling and abstraction.
+- **Software Development:** Skilled in NodeJS, NextJS, NestJS and have a basic understanding of DotNet.
+- **Tools and Technology:** Handlebars.js, TailwindCSS, Jira, AWS (S3, SES, SQS, Serverless, EC2, ECS etc), OpenAI (Embeddings, Vector Store, Custom Agent etc), Git & GitHub.
 
 **PROJECTS** <br>
 
