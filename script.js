@@ -33,9 +33,8 @@ $(document).ready(function () {
 
   new Typed(".typing", {
     strings: [
-      "A Frontend Developer",
+      "A Software Engineer",
       "A Backend Developer",
-      //"A MERN Stack Developer",
       "A Competitive Programmer",
     ],
     typeSpeed: 150,
