@@ -1,34 +1,63 @@
 $(document).ready(function () {
-  $(window).scroll(function () {
-    // sticky navbar on scroll script
-    {
-      this.scrollY > 20
-        ? $(".navbar").addClass("sticky")
-        : $(".navbar").removeClass("sticky");
+  var sectionIds = ["home", "experience", "projects", "skills", "contact"];
+  var sections = sectionIds
+    .map(function (id) {
+      return document.getElementById(id);
+    })
+    .filter(Boolean);
+
+  function setActiveNav(sectionId) {
+    $(".navbar .menu li a").removeClass("nav-active");
+    $('.navbar .menu li a[data-section="' + sectionId + '"]').addClass(
+      "nav-active",
+    );
+  }
+
+  function updateNavHighlight() {
+    var activeIndex = 0;
+    var offset = window.innerHeight * 0.5;
+    for (var i = 0; i < sections.length; i++) {
+      var section = sections[i];
+      if (section) {
+        var rect = section.getBoundingClientRect();
+        if (rect.top <= offset) activeIndex = i;
+      }
     }
+    setActiveNav(sectionIds[activeIndex]);
+  }
 
-    // scroll-up button show/hide script
-    {
-      this.scrollY > 200
-        ? $(".scroll-up-btn").addClass("show")
-        : $(".scroll-up-btn").removeClass("show");
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(
+      function () {
+        updateNavHighlight();
+      },
+      { root: null, rootMargin: "0px", threshold: [0, 0.1, 0.5, 1] },
+    );
+    sections.forEach(function (el) {
+      if (el) observer.observe(el);
+    });
+  }
+  ["scroll", "resize"].forEach(function (evt) {
+    window.addEventListener(evt, updateNavHighlight, { passive: true });
+  });
+  updateNavHighlight();
+
+  $("body").on("click", 'a[href^="#"]', function (e) {
+    var href = $(this).attr("href");
+    if (href === "#" || !href) return;
+    var target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      setActiveNav(target.id);
+      $(".navbar .menu").removeClass("active");
+      $(".hamburger i").removeClass("active");
     }
   });
 
-  $(".scroll-up-btn").click(function () {
-    $("html").animate({ scrollTop: 0 });
-    // removing smooth scroll on slide-up button click
-    $("html").css("scrollBehavior", "auto");
-  });
-
-  $(".navbar .menu li a").click(function () {
-    // applying again smooth scroll on menu items click
-    $("html").css("scrollBehavior", "smooth");
-  });
-
-  $(".menu-btn").click(function () {
+  $(".hamburger").click(function () {
     $(".navbar .menu").toggleClass("active");
-    $(".menu-btn i").toggleClass("active");
+    $(".hamburger i").toggleClass("active");
   });
 
   new Typed(".typing", {
@@ -43,26 +72,7 @@ $(document).ready(function () {
   });
 });
 
-function showImage(element) {
-  var projectDescription = element.querySelector(".projectDescription");
-  var projectImage = element.querySelector(".projectImage");
-  var hideElement = element.querySelector(".hide");
-
-  projectDescription.style.display = "none";
-  projectImage.style.display = "block";
-  hideElement.style.display = "none";
-}
-
-function showParagraph(element) {
-  var projectDescription = element.querySelector(".projectDescription");
-  var projectImage = element.querySelector(".projectImage");
-  var hideElement = element.querySelector(".hide");
-
-  projectDescription.style.display = "block";
-  projectImage.style.display = "none";
-  hideElement.style.display = "block";
-}
-
+// Optional: add your email in the Contact section (mailto link) for recruiters.
 // function calculateExperience(startDate) {
 //   const start = new Date(startDate);
 //   const now = new Date();
