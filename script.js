@@ -1,51 +1,59 @@
 $(document).ready(function () {
-  var pageIds = ["home", "experience", "skills", "projects", "contact"];
+  var sectionIds = ["home", "experience", "projects", "skills", "contact"];
+  var sections = sectionIds
+    .map(function (id) {
+      return document.getElementById(id);
+    })
+    .filter(Boolean);
 
-  function getPageIndex(hash) {
-    if (!hash) return 0;
-    var id = hash.replace("#", "");
-    var i = pageIds.indexOf(id);
-    return i >= 0 ? i : 0;
+  function setActiveNav(sectionId) {
+    $(".navbar .menu li a").removeClass("nav-active");
+    $('.navbar .menu li a[data-section="' + sectionId + '"]').addClass(
+      "nav-active",
+    );
   }
 
-  function goToPage(index) {
-    index = Math.max(0, Math.min(index, pageIds.length - 1));
-    $(".pages-inner").css("transform", "translateY(-" + index * 100 + "vh)");
-    $(".navbar .menu li a").removeClass("active");
-    if (index === 0) {
-      $('.navbar .menu li a[href="/"]').addClass("active");
-    } else {
-      $('.navbar .menu li a[href="#' + pageIds[index] + '"]').addClass(
-        "active",
-      );
+  function updateNavHighlight() {
+    var activeIndex = 0;
+    var offset = window.innerHeight * 0.5;
+    for (var i = 0; i < sections.length; i++) {
+      var section = sections[i];
+      if (section) {
+        var rect = section.getBoundingClientRect();
+        if (rect.top <= offset) activeIndex = i;
+      }
     }
-    if (typeof history.replaceState !== "undefined") {
-      var url =
-        index === 0
-          ? window.location.pathname + window.location.search
-          : "#" + pageIds[index];
-      history.replaceState(null, null, url);
-    }
+    setActiveNav(sectionIds[activeIndex]);
   }
+
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(
+      function () {
+        updateNavHighlight();
+      },
+      { root: null, rootMargin: "0px", threshold: [0, 0.1, 0.5, 1] },
+    );
+    sections.forEach(function (el) {
+      if (el) observer.observe(el);
+    });
+  }
+  ["scroll", "resize"].forEach(function (evt) {
+    window.addEventListener(evt, updateNavHighlight, { passive: true });
+  });
+  updateNavHighlight();
 
   $("body").on("click", 'a[href^="#"]', function (e) {
     var href = $(this).attr("href");
     if (href === "#" || !href) return;
-    var index = getPageIndex(href);
-    if (pageIds[index] !== undefined) {
+    var target = document.querySelector(href);
+    if (target) {
       e.preventDefault();
-      goToPage(index);
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      setActiveNav(target.id);
       $(".navbar .menu").removeClass("active");
       $(".hamburger i").removeClass("active");
     }
   });
-
-  $(window).on("hashchange", function () {
-    goToPage(getPageIndex(window.location.hash));
-  });
-
-  var initialIndex = getPageIndex(window.location.hash);
-  goToPage(initialIndex);
 
   $(".hamburger").click(function () {
     $(".navbar .menu").toggleClass("active");

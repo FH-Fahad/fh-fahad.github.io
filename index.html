@@ -35,11 +35,11 @@
     <div class="max-width">
       <div class="logo"><a href="/">FAHAD</a></div>
       <ul class="menu">
-        <li><a href="/" class="menu-btn">Home</a></li>
-        <li><a href="#experience" class="menu-btn">Experience</a></li>
-        <li><a href="#skills" class="menu-btn">Skills</a></li>
-        <li><a href="#projects" class="menu-btn">Projects</a></li>
-        <li><a href="#contact" class="menu-btn">Contact</a></li>
+        <li><a href="#home" class="menu-btn" data-section="home">Home</a></li>
+        <li><a href="#experience" class="menu-btn" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="menu-btn" data-section="projects">Projects</a></li>
+        <li><a href="#skills" class="menu-btn" data-section="skills">Skills</a></li>
+        <li><a href="#contact" class="menu-btn" data-section="contact">Contact</a></li>
       </ul>
       <div class="hamburger" aria-label="Toggle menu">
         <i class="fa-solid fa-bars-staggered"></i>
@@ -49,7 +49,6 @@
 
   <div class="pages">
     <div class="pages-inner">
-      <!-- home section start -->
       <section class="home page-section" id="home" data-page="0">
         <div class="max-width">
           <div class="home-content">
@@ -58,17 +57,17 @@
             <div class="text-3">And I'm <span class="typing"></span></div>
             <p class="tagline">
               Building scalable backend systems with Node.js & TypeScript.
-              Currently at 6sense Technologies.
+              Currently working at 6sense HQ.
             </p>
             <div class="education">
               <p>
                 <b>Associate Software Engineer II </b>
-                </br> 6sense Technologies
+                </br> 6sense HQ
                 <br /> Sept 2024 – Present
               </p>
             </div>
             <div class="cta-row">
-              <a href="./Assets/FahadBinMohammadHossain.pdf" target="_blank" rel="noopener"><i
+              <a href="./Assets/Fahad_Bin_Mohammad_Hossain_Resume.pdf" target="_blank" rel="noopener"><i
                   class="fa-solid fa-download"></i> Download Resume</a>
               <a href="#projects" class="outline">See Projects <i class="fa-solid fa-arrow-down"></i></a>
             </div>
@@ -77,22 +76,26 @@
                   class="fab fa-linkedin"></i></a>
               <a href="https://github.com/fh-fahad/" target="_blank" rel="noopener" aria-label="GitHub"><i
                   class="fa-brands fa-github"></i></a>
-              <a href="https://twitter.com/_FahadHossain" target="_blank" rel="noopener" aria-label="Twitter"><i
-                  class="fab fa-twitter"></i></a>
+              <!-- <a href="https://twitter.com/_FahadHossain" target="_blank" rel="noopener" aria-label="Twitter"><i
+                  class="fab fa-twitter"></i></a> -->
             </div>
           </div>
         </div>
       </section>
 
-      <!-- experience section – timeline (add new companies by duplicating .timeline-company block) -->
       <section class="experience page-section" id="experience" data-page="1">
         <div class="max-width">
           <h2 class="title">Experience</h2>
           <div class="experience-timeline">
             <!-- Company 1: 6sense Technologies -->
             <div class="timeline-company">
-              <h3 class="timeline-company-name">6sense Technologies</h3>
+              <div class="timeline-company-header">
+                <img src="./Assets/img/6senseLogo.png" alt="6sense HQ Logo" class="timeline-company-logo">
+                <h3 class="timeline-company-name">6sense HQ</h3>
+              </div>
               <div class="timeline-roles">
+
+                <!-- ASE II -->
                 <div class="timeline-item">
                   <span class="timeline-dot"></span>
                   <div class="timeline-content">
@@ -102,15 +105,22 @@
                     <div class="timeline-date">Sept 2025 – Now</div>
                     <ul class="timeline-bullets">
                       <li>
-                        Dummy bullet – add your impact or responsibility here.
+                        Architecting and scaling AI-powered microservices using NestJS, PostgreSQL, and AWS, handling high-volume document processing and asynchronous workflows.
                       </li>
                       <li>
-                        Dummy bullet – e.g. technologies, scope, or outcome.
+                        Integrated OpenAI Response API, vector embeddings (pgvector), and built intelligent pipelines for automated document analysis, structured data extraction, and AI-driven decision systems.
                       </li>
-                      <li>Dummy bullet – replace with real details later.</li>
+                      <li>
+                        Designed compatibility/decision engines for complex business logic evaluation, improving automated investment analysis accuracy and reducing manual review time significantly.
+                      </li>
+                      <li>
+                        Optimized inter-service communication using SQS, RabbitMQ, and EventBridge with idempotent job handling and distributed task processing.
+                      </li>
                     </ul>
                   </div>
                 </div>
+
+                <!-- ASE I -->
                 <div class="timeline-item">
                   <span class="timeline-dot"></span>
                   <div class="timeline-content">
@@ -120,15 +130,22 @@
                     <div class="timeline-date">Sept 2024 – Aug 2025</div>
                     <ul class="timeline-bullets">
                       <li>
-                        Dummy bullet – add your impact or responsibility here.
+                        Developed scalable backend systems using microservice architecture, enabling high-performance communication across services using RabbitMQ and AWS SQS.
                       </li>
                       <li>
-                        Dummy bullet – e.g. technologies, scope, or outcome.
+                        Built and maintained multi-tenant architectures ensuring secure, isolated environments while sharing core infrastructure efficiently.
                       </li>
-                      <li>Dummy bullet – replace with real details later.</li>
+                      <li>
+                        Implemented CI/CD pipelines using GitHub Actions and ArgoCD, improving deployment reliability and reducing release time.
+                      </li>
+                      <li>
+                        Improved system performance using Redis caching, background job queues, and optimized PostgreSQL queries for large-scale data workflows.
+                      </li>
                     </ul>
                   </div>
                 </div>
+
+                <!-- Internship -->
                 <div class="timeline-item">
                   <span class="timeline-dot"></span>
                   <div class="timeline-content">
@@ -136,191 +153,242 @@
                     <div class="timeline-date">Mar 2024 – Aug 2024</div>
                     <ul class="timeline-bullets">
                       <li>
-                        Dummy bullet – add your impact or responsibility here.
+                        Contributed to production-grade applications built with NestJS, NextJS, MongoDB, and PostgreSQL.
                       </li>
                       <li>
-                        Dummy bullet – e.g. technologies, scope, or outcome.
+                        Developed and maintained RESTful APIs ensuring secure data handling and seamless frontend-backend integration.
                       </li>
-                      <li>Dummy bullet – replace with real details later.</li>
+                      <li>
+                        Resolved critical bugs, refactored legacy modules, and wrote unit test cases using Jest to improve reliability and maintainability.
+                      </li>
+                      <li>
+                        Gained hands-on experience with real-world deployment workflows and collaborative development in agile environments.
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Add another company later by copying the block below:
-        <div class="timeline-company">
-          <h3 class="timeline-company-name">Company Name</h3>
-          <div class="timeline-roles">
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div class="timeline-content">
-                <div class="timeline-title">Job Title</div>
-                <div class="timeline-date">Start – End</div>
-                <ul class="timeline-bullets">
-                  <li>Bullet 1 – responsibility or impact.</li>
-                  <li>Bullet 2 – technologies or scope.</li>
-                  <li>Bullet 3 – outcome or detail.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        -->
           </div>
         </div>
       </section>
 
-      <!-- skills section – vertical list like Experience (add bullets as needed) -->
+        <section class="projects page-section" id="projects" data-page="3">
+        <div class="max-width">
+          <h2 class="title">Projects</h2>
+          <div class="projects-vertical vertical-list">
+            <!-- Jeter.ai -->
+            <div class="vertical-group">
+              <h3 class="vertical-group-name">
+                Jeter.ai – AI Compatibility & Intelligent Dating Platform
+              </h3>
+              <div class="vertical-content">
+                <ul class="vertical-bullets">
+                  <li>
+                    Engineered an AI-driven compatibility engine leveraging OpenAI Response API and vector embeddings (pgvector) to generate deep personality and preference-based matchmaking.
+                  </li>
+                  <li>
+                    Designed semantic similarity pipelines for profile matching using embedding search and custom scoring algorithms.
+                  </li>
+                  <li>
+                    Built complex decision logic combining AI inference, rule-based evaluation, and weighted compatibility scoring.
+                  </li>
+                  <li>
+                    Implemented scalable microservices with asynchronous job queues and distributed processing for real-time matchmaking.
+                  </li>
+                  <li>
+                    Optimized PostgreSQL queries and vector indexes to support high-performance similarity search at scale.
+                  </li>
+                </ul>
+                <!-- <div class="project-links">
+                  <a href="https://github.com/yourusername/jeter-ai-dummy" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a href="https://jeter-ai-demo.com" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  </a>
+                </div> -->
+              </div>
+            </div>
+
+            <!-- HTV -->
+            <div class="vertical-group">
+              <h3 class="vertical-group-name">
+                HTV – AI Powered Venture Capital Deal Management Platform
+              </h3>
+              <div class="vertical-content">
+                <ul class="vertical-bullets">
+                  <li>
+                    Architected and developed a venture capital platform for automated deal processing, evaluation, and AI-powered investment analysis.
+                  </li>
+                  <li>
+                    Integrated OpenAI Response API, AI agents, and vector embeddings to enable intelligent document parsing, business plan analysis, and structured data extraction with ~95% precision.
+                  </li>
+                  <li>
+                    Designed scalable asynchronous workflows using AWS SQS and EventBridge for distributed document processing and background task orchestration.
+                  </li>
+                  <li>
+                    Built a Turborepo monorepo with shared packages, reducing build times by 40% and improving cross-service maintainability.
+                  </li>
+                  <li>
+                    Deployed cloud-native infrastructure using AWS (S3, EC2, SQS, EventBridge) ensuring high availability and horizontal scalability.
+                  </li>
+                </ul>
+                <!-- <div class="project-links">
+                  <a href="https://github.com/yourusername/htv-dummy" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a href="https://htv-demo.com" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  </a>
+                </div> -->
+              </div>
+            </div>
+
+            <!-- Reelsync -->
+            <div class="vertical-group">
+              <h3 class="vertical-group-name">
+                Reelsync.io – Multi-Tenant Video Production SaaS Platform
+              </h3>
+              <div class="vertical-content">
+                <ul class="vertical-bullets">
+                  <li>
+                    Developed a scalable multi-tenant SaaS platform enabling video production teams to manage workflows, collaboration, clients, and payments.
+                  </li>
+                  <li>
+                    Designed tenant-isolated architecture ensuring secure data segregation while sharing core infrastructure.
+                  </li>
+                  <li>
+                    Implemented advanced RBAC system with granular role-permission control across organizations.
+                  </li>
+                  <li>
+                    Built Kanban-based workflow engine with task dependencies, timelines, collaborators, and customizable templates.
+                  </li>
+                  <li>
+                    Integrated Stripe for subscription billing, Zoho for automated invoicing, and Twilio for real-time notifications.
+                  </li>
+                </ul>
+                <!-- <div class="project-links">
+                  <a href="https://github.com/yourusername/reelsync-dummy" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a href="https://reelsync-demo.com" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  </a>
+                </div> -->
+              </div>
+            </div>
+
+            <!-- Pattern50 -->
+            <div class="vertical-group">
+              <h3 class="vertical-group-name">
+                Pattern50 – Multi-Tenant Software Development & Document Management System
+              </h3>
+              <div class="vertical-content">
+                <ul class="vertical-bullets">
+                  <li>Analyzed requirements, designed, and implemented a scalable database and core features, coordinating with frontend and QA teams to ensure smooth integration and deployment.
+                  </li>
+                  <li>
+                    Developed backend services using NestJS, TypeScript, MongoDB, and Redis for performance optimization.
+                  </li>
+                  <li>
+                    Established reliable microservice communication using RabbitMQ for a decoupled architecture.
+                  </li>
+                  </li>
+                </ul>
+                <!-- <div class="project-links">
+                  <a href="https://github.com/yourusername/reelsync-dummy" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a href="https://reelsync-demo.com" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  </a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="skills page-section" id="skills" data-page="2">
         <div class="max-width">
           <h2 class="title">Skills</h2>
           <div class="skills-vertical vertical-list">
+
             <div class="vertical-group">
               <h3 class="vertical-group-name">Languages</h3>
               <div class="vertical-content">
                 <ul class="vertical-bullets">
-                  <li>Dummy bullet – add skill or detail.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
+                  <li>TypeScript (Primary), JavaScript (ES6+)</li>
+                  <li>SQL (PostgreSQL), Bash (Basic)</li>
                 </ul>
               </div>
             </div>
+
             <div class="vertical-group">
               <h3 class="vertical-group-name">Backend</h3>
               <div class="vertical-content">
                 <ul class="vertical-bullets">
-                  <li>Dummy bullet – add skill or detail.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
+                  <li>NestJS, Node.js, Express</li>
+                  <li>Microservices Architecture, REST APIs, RBAC</li>
+                  <li>OpenAI Response API, LLM Integration, AI Agents</li>
+                  <li>Vector Search (pgvector), Embeddings, Compatibility Engines</li>
+                  <li>Background Jobs, Distributed Systems, Event-Driven Architecture</li>
                 </ul>
               </div>
             </div>
+
             <div class="vertical-group">
               <h3 class="vertical-group-name">Frontend</h3>
               <div class="vertical-content">
                 <ul class="vertical-bullets">
-                  <li>Dummy bullet – add skill or detail.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
+                  <li>Next.js, React.js</li>
+                  <li>TailwindCSS, Responsive UI Development</li>
+                  <li>State Management & API Integration</li>
                 </ul>
               </div>
             </div>
+
             <div class="vertical-group">
               <h3 class="vertical-group-name">Databases</h3>
               <div class="vertical-content">
                 <ul class="vertical-bullets">
-                  <li>Dummy bullet – add skill or detail.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
+                  <li>PostgreSQL (Advanced Querying, Indexing, Optimization)</li>
+                  <li>MongoDB</li>
+                  <li>Redis (Caching, Pub/Sub)</li>
+                  <li>pgvector (Vector Similarity Search)</li>
                 </ul>
               </div>
             </div>
+
             <div class="vertical-group">
               <h3 class="vertical-group-name">DevOps & Tools</h3>
               <div class="vertical-content">
                 <ul class="vertical-bullets">
-                  <li>Dummy bullet – add skill or detail.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
+                  <li>AWS (S3, SQS, EC2, EventBridge)</li>
+                  <li>Docker, ArgoCD, GitHub Actions</li>
+                  <li>RabbitMQ, BullMQ</li>
+                  <li>Git, Turborepo, pnpm</li>
                 </ul>
               </div>
             </div>
+
             <div class="vertical-group">
               <h3 class="vertical-group-name">Other</h3>
               <div class="vertical-content">
                 <ul class="vertical-bullets">
-                  <li>Dummy bullet – add skill or detail.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
+                  <li>Multi-Tenant System Design</li>
+                  <li>System Design & Scalability</li>
+                  <li>CI/CD & Cloud-Native Architecture</li>
+                  <li>Unit Testing (Jest)</li>
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      <!-- projects section – vertical list like Experience (add bullets as needed) -->
-      <section class="projects page-section" id="projects" data-page="3">
-        <div class="max-width">
-          <h2 class="title">Projects</h2>
-          <div class="projects-vertical vertical-list">
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Tasks</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>Dummy bullet – add project detail or tech.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
-                </ul>
-                <div class="project-links">
-                  <a href="https://github.com/FH-Fahad/tasks" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
-                  <a href="https://tasks-frontend-eight.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
-                </div>
-              </div>
-            </div>
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">FH Clothing</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>Dummy bullet – add project detail or tech.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
-                </ul>
-                <div class="project-links">
-                  <a href="https://github.com/FH-Fahad/fh-clothingV1" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
-                  <a href="https://fh-clothing-v1.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
-                </div>
-              </div>
-            </div>
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Checkmate</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>Dummy bullet – add project detail or tech.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
-                </ul>
-                <div class="project-links">
-                  <a href="https://github.com/F-R-J/Checkmate-Frontend" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
-                  <a href="https://checkmate-rq9d.onrender.com/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
-                </div>
-              </div>
-            </div>
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Image Gallery</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>Dummy bullet – add project detail or tech.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
-                </ul>
-                <div class="project-links">
-                  <a href="https://github.com/FH-Fahad/imageGalleryWithReact" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
-                  <a href="https://image-gallery-with-react.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
-                </div>
-              </div>
-            </div>
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Brain Tumor Detection</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>Dummy bullet – add project detail or tech.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
-                </ul>
-                <div class="project-links">
-                  <a href="https://github.com/FH-Fahad/Hybride-Model" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
-                  <a href="https://github.com/FH-Fahad/Hybride-Model/blob/main/hybride-model.ipynb" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Notebook</a>
-                </div>
-              </div>
-            </div>
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Event Tracker</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>Dummy bullet – add project detail or tech.</li>
-                  <li>Dummy bullet – replace with real details later.</li>
-                </ul>
-                <div class="project-links">
-                  <a href="https://github.com/FH-Fahad/event-tracker" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
-                  <a href="https://aiub-events.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- contact section -->
       <section class="contact page-section" id="contact" data-page="4">
         <div class="max-width">
           <h2 class="title">Contact</h2>
@@ -341,10 +409,10 @@
     </div>
   </div>
 
-  <footer class="site-footer">
+  <!-- <footer class="site-footer">
     <span>Created By <a href="#home" class="footer-link">FAHAD HOSSAIN</a> |
       <span class="far fa-copyright"></span> All rights reserved.</span>
-  </footer>
+  </footer> -->
 
   <script src="script.js"></script>
 </body>
