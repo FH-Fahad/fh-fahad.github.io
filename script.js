@@ -70,6 +70,99 @@ $(document).ready(function () {
     backSpeed: 80,
     loop: true,
   });
+
+  var resumePdf = "./Assets/Fahad_Bin_Mohammad_Hossain_Resume.pdf";
+  var resumePdfAbsolute = (function () {
+    try {
+      return new URL(resumePdf, window.location.href).href;
+    } catch (e) {
+      return resumePdf;
+    }
+  })();
+  var $resumeModal = $("#resume-modal");
+  var $resumeFrame = $("#resume-modal-frame");
+  var $resumeOpenTrigger = $("#open-resume-modal");
+  var $resumeFallback = $("#resume-modal-fallback");
+  var $openPdfLink = $("#resume-open-pdf-link");
+
+  /** iOS / Android: PDF in iframe is not supported or shows blank. */
+  function shouldUsePdfInlineFallback() {
+    var ua = (navigator.userAgent || "").toLowerCase();
+    if (ua.indexOf("iphone") > -1 || ua.indexOf("ipod") > -1) return true;
+    if (ua.indexOf("ipad") > -1) return true;
+    if (typeof navigator.standalone !== "undefined" && navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1) {
+      return true;
+    }
+    if (ua.indexOf("android") > -1 && (ua.indexOf("mobile") > -1 || document.documentElement.clientWidth < 1024)) {
+      return true;
+    }
+    if (window.matchMedia) {
+      try {
+        if (window.matchMedia("(max-width: 1024px) and (hover: none) and (pointer: coarse)").matches) {
+          return true;
+        }
+      } catch (e) {}
+    }
+    return false;
+  }
+
+  function setResumeOpenLinksHref() {
+    $openPdfLink.attr("href", resumePdfAbsolute);
+  }
+
+  setResumeOpenLinksHref();
+
+  function openResumeModal() {
+    var useFallback = shouldUsePdfInlineFallback();
+    if (useFallback) {
+      $resumeModal.addClass("resume-modal--pdf-fallback");
+      $resumeFrame.removeAttr("src");
+      $resumeFallback.attr("aria-hidden", "false");
+    } else {
+      $resumeModal.removeClass("resume-modal--pdf-fallback");
+      $resumeFrame.attr("src", resumePdf);
+      $resumeFallback.attr("aria-hidden", "true");
+    }
+    $resumeModal[0].removeAttribute("hidden");
+    $resumeModal.attr("aria-hidden", "false");
+    $("body").css("overflow", "hidden");
+    setTimeout(function () {
+      $resumeModal.find(".resume-modal__close").first().trigger("focus");
+    }, 0);
+  }
+
+  function closeResumeModal() {
+    $resumeModal[0].setAttribute("hidden", "");
+    $resumeModal.attr("aria-hidden", "true");
+    $resumeModal.removeClass("resume-modal--pdf-fallback");
+    $resumeFallback.attr("aria-hidden", "true");
+    $("body").css("overflow", "");
+    $resumeFrame.removeAttr("src");
+    if (document.activeElement && $resumeModal[0].contains(document.activeElement)) {
+      $resumeOpenTrigger.trigger("focus");
+    }
+  }
+
+  $(".resume-modal-trigger").on("click", function (e) {
+    e.preventDefault();
+    openResumeModal();
+  });
+
+  $("[data-resume-close]").on("click", function (e) {
+    e.preventDefault();
+    closeResumeModal();
+  });
+
+  $resumeModal.on("click", function (e) {
+    if (e.target === e.currentTarget) {
+      closeResumeModal();
+    }
+  });
+
+  $(document).on("keydown", function (e) {
+    if (e.key !== "Escape" || $resumeModal[0].hasAttribute("hidden")) return;
+    closeResumeModal();
+  });
 });
 
 // Optional: add your email in the Contact section (mailto link) for recruiters.

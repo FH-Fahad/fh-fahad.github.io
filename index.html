@@ -67,8 +67,9 @@
               </p>
             </div>
             <div class="cta-row">
-              <a href="./Assets/Fahad_Bin_Mohammad_Hossain_Resume.pdf" target="_blank" rel="noopener"><i
-                  class="fa-solid fa-download"></i> Download Resume</a>
+              <a href="./Assets/Fahad_Bin_Mohammad_Hossain_Resume.pdf" class="resume-modal-trigger" id="open-resume-modal"
+                aria-haspopup="dialog" aria-controls="resume-modal"><i
+                  class="fa-solid fa-file-lines"></i> View Resume</a>
               <a href="#projects" class="outline">See Projects <i class="fa-solid fa-arrow-down"></i></a>
             </div>
             <div class="media-icons">
@@ -413,6 +414,31 @@
     <span>Created By <a href="#home" class="footer-link">FAHAD HOSSAIN</a> |
       <span class="far fa-copyright"></span> All rights reserved.</span>
   </footer> -->
+
+  <div class="resume-modal" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title" hidden>
+    <div class="resume-modal__panel">
+      <header class="resume-modal__header">
+        <h2 class="resume-modal__title" id="resume-modal-title">Resume</h2>
+        <div class="resume-modal__actions">
+          <a href="./Assets/Fahad_Bin_Mohammad_Hossain_Resume.pdf" class="resume-modal__download" download="Fahad_Bin_Mohammad_Hossain_Resume.pdf"><i
+              class="fa-solid fa-download" aria-hidden="true"></i> Download as PDF</a>
+          <button type="button" class="resume-modal__close" data-resume-close aria-label="Close resume viewer">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+        </div>
+      </header>
+      <div class="resume-modal__body">
+        <iframe class="resume-modal__frame" id="resume-modal-frame" title="Fahad Hossain — resume PDF" loading="lazy"></iframe>
+        <div class="resume-modal__fallback" id="resume-modal-fallback" aria-hidden="true">
+          <p class="resume-modal__fallback-text">
+            This mobile browser can’t show PDFs inside the page (most don’t, especially on iOS). Open the file
+            in your system viewer, or use Download.
+          </p>
+          <a href="./Assets/Fahad_Bin_Mohammad_Hossain_Resume.pdf" class="resume-modal__open-pdf" id="resume-open-pdf-link" target="_blank" rel="noopener">Open PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
