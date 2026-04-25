@@ -87,306 +87,218 @@
       <section class="experience page-section" id="experience" data-page="1">
         <div class="max-width">
           <h2 class="title">Experience</h2>
-          <div class="experience-timeline">
-            <!-- Company 1: 6sense Technologies -->
-            <div class="timeline-company">
-              <div class="timeline-company-header">
-                <img src="./Assets/img/6senseLogo.png" alt="6sense HQ Logo" class="timeline-company-logo">
-                <h3 class="timeline-company-name">6sense HQ</h3>
+          <article class="exp-card" aria-labelledby="exp-company-name">
+            <header class="exp-card__head">
+              <div class="exp-card__brand">
+                <img src="./Assets/img/6senseLogo.png" alt="" width="52" height="52" class="exp-card__logo" loading="lazy">
+                <div class="exp-card__brand-text">
+                  <h3 class="exp-card__company" id="exp-company-name">6sense HQ</h3>
+                  <p class="exp-card__range">Mar 2024 — Present</p>
+                </div>
               </div>
-              <div class="timeline-roles">
-
-                <!-- ASE II -->
-                <div class="timeline-item">
-                  <span class="timeline-dot"></span>
-                  <div class="timeline-content">
-                    <div class="timeline-title">
-                      Associate Software Engineer II
-                    </div>
-                    <div class="timeline-date">Sept 2025 – Now</div>
-                    <ul class="timeline-bullets">
-                      <li>
-                        Architecting and scaling AI-powered microservices using NestJS, PostgreSQL, and AWS, handling high-volume document processing and asynchronous workflows.
-                      </li>
-                      <li>
-                        Integrated OpenAI Response API, vector embeddings (pgvector), and built intelligent pipelines for automated document analysis, structured data extraction, and AI-driven decision systems.
-                      </li>
-                      <li>
-                        Designed compatibility/decision engines for complex business logic evaluation, improving automated investment analysis accuracy and reducing manual review time significantly.
-                      </li>
-                      <li>
-                        Optimized inter-service communication using SQS, RabbitMQ, and EventBridge with idempotent job handling and distributed task processing.
-                      </li>
-                    </ul>
-                  </div>
+            </header>
+            <div class="exp-card__roles">
+              <div class="exp-block">
+                <div class="exp-block__row">
+                  <h4 class="exp-block__title">Associate Software Engineer II</h4>
+                  <time class="exp-block__time">Sept 2025 — Now</time>
                 </div>
-
-                <!-- ASE I -->
-                <div class="timeline-item">
-                  <span class="timeline-dot"></span>
-                  <div class="timeline-content">
-                    <div class="timeline-title">
-                      Associate Software Engineer I
-                    </div>
-                    <div class="timeline-date">Sept 2024 – Aug 2025</div>
-                    <ul class="timeline-bullets">
-                      <li>
-                        Developed scalable backend systems using microservice architecture, enabling high-performance communication across services using RabbitMQ and AWS SQS.
-                      </li>
-                      <li>
-                        Built and maintained multi-tenant architectures ensuring secure, isolated environments while sharing core infrastructure efficiently.
-                      </li>
-                      <li>
-                        Implemented CI/CD pipelines using GitHub Actions and ArgoCD, improving deployment reliability and reducing release time.
-                      </li>
-                      <li>
-                        Improved system performance using Redis caching, background job queues, and optimized PostgreSQL queries for large-scale data workflows.
-                      </li>
-                    </ul>
-                  </div>
+                <ul class="exp-block__list">
+                  <li>Architecting and scaling AI-powered microservices using NestJS, PostgreSQL, and AWS, handling high-volume document processing and asynchronous workflows.</li>
+                  <li>Integrated OpenAI Response API, vector embeddings (pgvector), and built intelligent pipelines for automated document analysis, structured data extraction, and AI-driven decision systems.</li>
+                  <li>Designed compatibility/decision engines for complex business logic evaluation, improving automated investment analysis accuracy and reducing manual review time significantly.</li>
+                  <li>Optimized inter-service communication using SQS, RabbitMQ, and EventBridge with idempotent job handling and distributed task processing.</li>
+                </ul>
+              </div>
+              <div class="exp-block">
+                <div class="exp-block__row">
+                  <h4 class="exp-block__title">Associate Software Engineer I</h4>
+                  <time class="exp-block__time">Sept 2024 — Aug 2025</time>
                 </div>
-
-                <!-- Internship -->
-                <div class="timeline-item">
-                  <span class="timeline-dot"></span>
-                  <div class="timeline-content">
-                    <div class="timeline-title">Backend Developer Intern</div>
-                    <div class="timeline-date">Mar 2024 – Aug 2024</div>
-                    <ul class="timeline-bullets">
-                      <li>
-                        Contributed to production-grade applications built with NestJS, NextJS, MongoDB, and PostgreSQL.
-                      </li>
-                      <li>
-                        Developed and maintained RESTful APIs ensuring secure data handling and seamless frontend-backend integration.
-                      </li>
-                      <li>
-                        Resolved critical bugs, refactored legacy modules, and wrote unit test cases using Jest to improve reliability and maintainability.
-                      </li>
-                      <li>
-                        Gained hands-on experience with real-world deployment workflows and collaborative development in agile environments.
-                      </li>
-                    </ul>
-                  </div>
+                <ul class="exp-block__list">
+                  <li>Developed scalable backend systems using microservice architecture, enabling high-performance communication across services using RabbitMQ and AWS SQS.</li>
+                  <li>Built and maintained multi-tenant architectures ensuring secure, isolated environments while sharing core infrastructure efficiently.</li>
+                  <li>Implemented CI/CD pipelines using GitHub Actions and ArgoCD, improving deployment reliability and reducing release time.</li>
+                  <li>Improved system performance using Redis caching, background job queues, and optimized PostgreSQL queries for large-scale data workflows.</li>
+                </ul>
+              </div>
+              <div class="exp-block">
+                <div class="exp-block__row">
+                  <h4 class="exp-block__title">Backend Developer Intern</h4>
+                  <time class="exp-block__time">Mar 2024 — Aug 2024</time>
                 </div>
+                <ul class="exp-block__list">
+                  <li>Contributed to production-grade applications built with NestJS, NextJS, MongoDB, and PostgreSQL.</li>
+                  <li>Developed and maintained RESTful APIs ensuring secure data handling and seamless frontend-backend integration.</li>
+                  <li>Resolved critical bugs, refactored legacy modules, and wrote unit test cases using Jest to improve reliability and maintainability.</li>
+                  <li>Gained hands-on experience with real-world deployment workflows and collaborative development in agile environments.</li>
+                </ul>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
         <section class="projects page-section" id="projects" data-page="3">
         <div class="max-width">
           <h2 class="title">Projects</h2>
-          <div class="projects-vertical vertical-list">
-            <!-- Jeter.ai -->
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">
-                Jeter.ai – AI Compatibility & Intelligent Dating Platform
-              </h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>
-                    Engineered an AI-driven compatibility engine leveraging OpenAI Response API and vector embeddings (pgvector) to generate deep personality and preference-based matchmaking.
-                  </li>
-                  <li>
-                    Designed semantic similarity pipelines for profile matching using embedding search and custom scoring algorithms.
-                  </li>
-                  <li>
-                    Built complex decision logic combining AI inference, rule-based evaluation, and weighted compatibility scoring.
-                  </li>
-                  <li>
-                    Implemented scalable microservices with asynchronous job queues and distributed processing for real-time matchmaking.
-                  </li>
-                  <li>
-                    Optimized PostgreSQL queries and vector indexes to support high-performance similarity search at scale.
-                  </li>
+          <div class="projects-bento" role="list">
+            <article class="project-tile" role="listitem">
+              <span class="project-tile__mark" aria-hidden="true">01</span>
+              <div class="project-tile__text">
+                <h3 class="project-tile__name">JeterAI</h3>
+                <p class="project-tile__tag">AI compatibility &amp; dating platform</p>
+                <ul class="project-tile__list">
+                  <li>Engineered an AI-driven compatibility engine leveraging OpenAI Response API and vector embeddings (pgvector) for deep personality and preference-based matchmaking.</li>
+                  <li>Designed semantic similarity pipelines for profile matching using embedding search and custom scoring algorithms.</li>
+                  <li>Built complex decision logic combining AI inference, rule-based evaluation, and weighted compatibility scoring.</li>
+                  <li>Implemented scalable microservices with asynchronous job queues and distributed processing for real-time matchmaking.</li>
+                  <li>Optimized PostgreSQL and vector indexes for high-performance similarity search at scale.</li>
                 </ul>
-                <!-- <div class="project-links">
-                  <a href="https://github.com/yourusername/jeter-ai-dummy" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-github"></i> Code
-                  </a>
-                  <a href="https://jeter-ai-demo.com" target="_blank" rel="noopener">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
-                  </a>
-                </div> -->
               </div>
-            </div>
-
-            <!-- HTV -->
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">
-                HTV – AI Powered Venture Capital Deal Management Platform
-              </h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>
-                    Architected and developed a venture capital platform for automated deal processing, evaluation, and AI-powered investment analysis.
-                  </li>
-                  <li>
-                    Integrated OpenAI Response API, AI agents, and vector embeddings to enable intelligent document parsing, business plan analysis, and structured data extraction with ~95% precision.
-                  </li>
-                  <li>
-                    Designed scalable asynchronous workflows using AWS SQS and EventBridge for distributed document processing and background task orchestration.
-                  </li>
-                  <li>
-                    Built a Turborepo monorepo with shared packages, reducing build times by 40% and improving cross-service maintainability.
-                  </li>
-                  <li>
-                    Deployed cloud-native infrastructure using AWS (S3, EC2, SQS, EventBridge) ensuring high availability and horizontal scalability.
-                  </li>
+            </article>
+            <article class="project-tile" role="listitem">
+              <span class="project-tile__mark" aria-hidden="true">02</span>
+              <div class="project-tile__text">
+                <h3 class="project-tile__name">HTV</h3>
+                <p class="project-tile__tag">AI venture capital &amp; deal management</p>
+                <ul class="project-tile__list">
+                  <li>Architected a venture capital platform for automated deal processing, evaluation, and AI-powered investment analysis.</li>
+                  <li>Integrated OpenAI Response API, AI agents, and vector embeddings for document parsing, business plan analysis, and structured data extraction (~95% precision).</li>
+                  <li>Designed asynchronous workflows with AWS SQS and EventBridge for distributed document processing and background orchestration.</li>
+                  <li>Built a Turborepo monorepo with shared packages, cutting build times by ~40% and improving cross-service maintainability.</li>
+                  <li>Deployed cloud-native infrastructure on AWS (S3, EC2, SQS, EventBridge) for high availability and horizontal scale.</li>
                 </ul>
-                <!-- <div class="project-links">
-                  <a href="https://github.com/yourusername/htv-dummy" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-github"></i> Code
-                  </a>
-                  <a href="https://htv-demo.com" target="_blank" rel="noopener">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
-                  </a>
-                </div> -->
               </div>
-            </div>
-
-            <!-- Reelsync -->
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">
-                Reelsync.io – Multi-Tenant Video Production SaaS Platform
-              </h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>
-                    Developed a scalable multi-tenant SaaS platform enabling video production teams to manage workflows, collaboration, clients, and payments.
-                  </li>
-                  <li>
-                    Designed tenant-isolated architecture ensuring secure data segregation while sharing core infrastructure.
-                  </li>
-                  <li>
-                    Implemented advanced RBAC system with granular role-permission control across organizations.
-                  </li>
-                  <li>
-                    Built Kanban-based workflow engine with task dependencies, timelines, collaborators, and customizable templates.
-                  </li>
-                  <li>
-                    Integrated Stripe for subscription billing, Zoho for automated invoicing, and Twilio for real-time notifications.
-                  </li>
+            </article>
+            <article class="project-tile" role="listitem">
+              <span class="project-tile__mark" aria-hidden="true">03</span>
+              <div class="project-tile__text">
+                <h3 class="project-tile__name">Reelsync</h3>
+                <p class="project-tile__tag">Multi-tenant video production SaaS</p>
+                <ul class="project-tile__list">
+                  <li>Developed a scalable multi-tenant SaaS for video teams: workflows, collaboration, clients, and payments.</li>
+                  <li>Designed tenant-isolated architecture with secure data segregation and shared core infrastructure.</li>
+                  <li>Implemented advanced RBAC with granular role-permission control across organizations.</li>
+                  <li>Built a Kanban workflow engine with task dependencies, timelines, collaborators, and customizable templates.</li>
+                  <li>Integrated Stripe, Zoho invoicing, and Twilio for billing and real-time notifications.</li>
                 </ul>
-                <!-- <div class="project-links">
-                  <a href="https://github.com/yourusername/reelsync-dummy" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-github"></i> Code
-                  </a>
-                  <a href="https://reelsync-demo.com" target="_blank" rel="noopener">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
-                  </a>
-                </div> -->
               </div>
-            </div>
-
-            <!-- Pattern50 -->
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">
-                Pattern50 – Multi-Tenant Software Development & Document Management System
-              </h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>Analyzed requirements, designed, and implemented a scalable database and core features, coordinating with frontend and QA teams to ensure smooth integration and deployment.
-                  </li>
-                  <li>
-                    Developed backend services using NestJS, TypeScript, MongoDB, and Redis for performance optimization.
-                  </li>
-                  <li>
-                    Established reliable microservice communication using RabbitMQ for a decoupled architecture.
-                  </li>
-                  </li>
+            </article>
+            <article class="project-tile" role="listitem">
+              <span class="project-tile__mark" aria-hidden="true">04</span>
+              <div class="project-tile__text">
+                <h3 class="project-tile__name">Pattern50</h3>
+                <p class="project-tile__tag">Document management &amp; dev workflow</p>
+                <ul class="project-tile__list">
+                  <li>Analyzed requirements, designed, and implemented a scalable database and core features, coordinating with frontend and QA for integration and deployment.</li>
+                  <li>Developed backend services with NestJS, TypeScript, MongoDB, and Redis for performance.</li>
+                  <li>Established reliable microservice communication using RabbitMQ in a decoupled architecture.</li>
                 </ul>
-                <!-- <div class="project-links">
-                  <a href="https://github.com/yourusername/reelsync-dummy" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-github"></i> Code
-                  </a>
-                  <a href="https://reelsync-demo.com" target="_blank" rel="noopener">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
-                  </a>
-                </div> -->
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="skills page-section" id="skills" data-page="2">
-        <div class="max-width">
+        <div class="max-width max-width--skills">
           <h2 class="title">Skills</h2>
-          <div class="skills-vertical vertical-list">
-
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Languages</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>TypeScript (Primary), JavaScript (ES6+)</li>
-                  <li>SQL (PostgreSQL), Bash (Basic)</li>
-                </ul>
+          <ul class="skills-ledger" aria-label="Skill areas and technologies">
+            <li class="ledger-row">
+              <span class="ledger-row__index" aria-hidden="true">I</span>
+              <h3 class="ledger-row__cat" id="sk-languages">Languages</h3>
+              <div class="ledger-row__body" aria-labelledby="sk-languages">
+                <span class="ledger-term">C++</span>
+                <span class="ledger-term">JavaScript</span>
+                <span class="ledger-term">TypeScript</span>
+                <span class="ledger-term">Python</span>
+                <span class="ledger-term">SQL</span>
+                <span class="ledger-term">Bash</span>
               </div>
-            </div>
-
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Backend</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>NestJS, Node.js, Express</li>
-                  <li>Microservices Architecture, REST APIs, RBAC</li>
-                  <li>OpenAI Response API, LLM Integration, AI Agents</li>
-                  <li>Vector Search (pgvector), Embeddings, Compatibility Engines</li>
-                  <li>Background Jobs, Distributed Systems, Event-Driven Architecture</li>
-                </ul>
+            </li>
+            <li class="ledger-row">
+              <span class="ledger-row__index" aria-hidden="true">II</span>
+              <h3 class="ledger-row__cat" id="sk-backend">Backend</h3>
+              <div class="ledger-row__body" role="list" aria-labelledby="sk-backend">
+                <span class="ledger-term">Node.js</span>
+                <span class="ledger-term">Express</span>
+                <span class="ledger-term">NestJS</span>
+                 <span class="ledger-term">RabbitMQ</span>
+                <span class="ledger-term">BullMQ</span>
+                <span class="ledger-term">REST APIs</span>                
               </div>
-            </div>
-
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Frontend</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>Next.js, React.js</li>
-                  <li>TailwindCSS, Responsive UI Development</li>
-                  <li>State Management & API Integration</li>
-                </ul>
+            </li>
+            <li class="ledger-row">
+              <span class="ledger-row__index" aria-hidden="true">III</span>
+              <h3 class="ledger-row__cat" id="sk-frontend">Frontend</h3>
+              <div class="ledger-row__body" role="list" aria-labelledby="sk-frontend">
+                <span class="ledger-term">Next.js</span>
+                <span class="ledger-term">React</span>
+                <span class="ledger-term">Tailwind CSS</span>
+                <span class="ledger-term">Responsive UI</span>
+                <span class="ledger-term">State &amp; API integration</span>
               </div>
-            </div>
-
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Databases</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>PostgreSQL (Advanced Querying, Indexing, Optimization)</li>
-                  <li>MongoDB</li>
-                  <li>Redis (Caching, Pub/Sub)</li>
-                  <li>pgvector (Vector Similarity Search)</li>
-                </ul>
+            </li>
+            <li class="ledger-row">
+              <span class="ledger-row__index" aria-hidden="true">IV</span>
+              <h3 class="ledger-row__cat" id="sk-db">Databases</h3>
+              <div class="ledger-row__body" role="list" aria-labelledby="sk-db">
+                <span class="ledger-term">PostgreSQL</span>
+                <span class="ledger-term">MongoDB</span>
+                <span class="ledger-term">Redis</span>
+                <span class="ledger-term">VectorDB</span>
               </div>
-            </div>
-
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">DevOps & Tools</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>AWS (S3, SQS, EC2, EventBridge)</li>
-                  <li>Docker, ArgoCD, GitHub Actions</li>
-                  <li>RabbitMQ, BullMQ</li>
-                  <li>Git, Turborepo, pnpm</li>
-                </ul>
+            </li>
+            <li class="ledger-row">
+              <span class="ledger-row__index" aria-hidden="true">V</span>
+              <h3 class="ledger-row__cat" id="sk-devops">DevOps &amp; Cloud</h3>
+              <div class="ledger-row__body" role="list" aria-labelledby="sk-devops">
+                <span class="ledger-term">Git &amp; GitHub</span>
+                <span class="ledger-term">GitHub Actions</span>
+                <span class="ledger-term">Docker</span>
+                <span class="ledger-term">ArgoCD</span>
+                <span class="ledger-term">YAML</span>
+                <span class="ledger-term">Jenkins</span>
+                <span class="ledger-term">AWS (S3 / SQS / EC2 / ECS/ Fargate etc)</span>
               </div>
-            </div>
-
-            <div class="vertical-group">
-              <h3 class="vertical-group-name">Other</h3>
-              <div class="vertical-content">
-                <ul class="vertical-bullets">
-                  <li>Multi-Tenant System Design</li>
-                  <li>System Design & Scalability</li>
-                  <li>CI/CD & Cloud-Native Architecture</li>
-                  <li>Unit Testing (Jest)</li>
-                </ul>
+            </li>
+            <li class="ledger-row">
+              <span class="ledger-row__index" aria-hidden="true">VI</span>
+              <h3 class="ledger-row__cat" id="sk-devops">architecture</h3>
+              <div class="ledger-row__body" role="list" aria-labelledby="sk-devops">
+                <span class="ledger-term">Monolith</span>
+                <span class="ledger-term">Microservices</span>
+                <span class="ledger-term">Decoupled Architecture</span>
+                <span class="ledger-term">Event-driven Architecture</span>
+                <span class="ledger-term">API Gateway</span>
+                <span class="ledger-term">Serverless Architecture</span>
               </div>
-            </div>
-
-          </div>
+            </li>
+            <li class="ledger-row">
+              <span class="ledger-row__index" aria-hidden="true">VII</span>
+              <h3 class="ledger-row__cat" id="sk-devops">AI &amp; Engineering</h3>
+              <div class="ledger-row__body" role="list" aria-labelledby="sk-devops">
+                <span class="ledger-term">Retrieval Augmented Generation (RAG)</span>
+                <span class="ledger-term">Vector Embeddings</span>
+                <span class="ledger-term">Prompt Engineering</span>
+                <span class="ledger-term">Model Context Protocol (MCP)</span>
+                <span class="ledger-term">LLM API Integration</span>
+                <span class="ledger-term">Agentic Systems</span>
+              </div>
+            </li>
+            <li class="ledger-row ledger-row--last">
+              <span class="ledger-row__index" aria-hidden="true">VIII</span>
+              <h3 class="ledger-row__cat" id="sk-other">Soft Skills</h3>
+              <div class="ledger-row__body" role="list" aria-labelledby="sk-other">
+                <span class="ledger-term">Problem Solving</span>
+                <span class="ledger-term">Communication</span>
+                <span class="ledger-term">Teamwork</span>
+                <span class="ledger-term">Time Management</span>
+                <span class="ledger-term">Adaptability</span>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -395,8 +307,8 @@
           <h2 class="title">Contact</h2>
           <div class="contact-content">
             <p>
-              Open to new opportunities and collaborations. Reach out via
-              LinkedIn or email.
+              Open to new opportunities and collaborations. <br>
+              Reach out via LinkedIn or email.
             </p>
             <div class="contact-links">
               <a href="https://www.linkedin.com/in/fh-fahad/" target="_blank" rel="noopener"><i
